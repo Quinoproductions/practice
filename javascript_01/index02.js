@@ -23,3 +23,4 @@ for (let i = 0; i < cantidad; i++) {
 }
 
 console.log(family);
+
