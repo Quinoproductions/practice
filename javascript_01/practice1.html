@@ -7,11 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="mi_div">
+    <button  id="button">no seas boton</button>
+    <input type="text" id="input">
+    </div>
 
+    <button onclick="mostraralert();"> mostrar alert</button>
 
+    <input
+    id="my_input"
+    type="text"
+    onfocus='doFocus();'
+    onblur= 'doBlur();'
+    oninput= 'doInput();'
+    style="border: 1px solid black"
+    />
 
-    <script src="index.js"></script>
-    <script src="index02.js"></script>
+    <p id="my-error" style="color: red; font-size: 9px; margin: 0; padding: 0; display: none;">El Campo no es obligatorio</p>
+
+    <input
+    id="text" 
+    type="text"
+    onfocus="fnFocus();"
+    onblur="fnBlur();"
+    oninput="fnInput();"
+    style="border: 1px solid grey"
+    />
+<h6 id="error" style="color: red; display: none;" >este campo no esta completado</h6>
+<p id="result"></p>
+<button onclick="runalert();">click acà</button>
+<script src="index03.js"></script>
 </body>
 </html>
