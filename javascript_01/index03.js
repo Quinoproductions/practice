@@ -19,7 +19,7 @@ document.getElementById('button').addEventListener('click',click,true);
  }
 
  const fnBlur = function() {
-    const text = document.getElelementById('text');
+    const text = document.getElementById('text');
     const error = document.getElementById('error');
     if(text.value === '') {
         text.style.border = '1px solid red';
@@ -55,7 +55,7 @@ document.getElementById('button').addEventListener('click',click,true);
  
  const doBlur = function() {
     console.log('Saliste del input!');
-    const t = document.getElementById('my-input');
+    const t = document.getElementById('my_input');
     const p = document.getElementById('my-error');
     if(t.value === '') {
         t.style.backgroundColor = 'orange';
@@ -63,27 +63,6 @@ document.getElementById('button').addEventListener('click',click,true);
         p.style.display = 'block';
     }
   }
-const doInput = () => {
-    const t = document.getElementById('my-input');
-    console.log(t.value);
-const operacion = prompt('¿que tipo de operacion desea realizar?' );
-const v1 = prompt('ingrese valor');
-const v2 = prompt('ingrese valor');
-
-switch (operacion) {
-    case 'suma':
-        console.log( parseFloat(v1) + parseFloat(v2));
-        break;
-    case 'resta':
-        console.log( parseFloat(v1) - parseFloat(v2));    
-        break;
-    case 'multiplicacion': 
-            console.log( parseFloat(v1) * parseFloat(v2));
-            break;
-    case 'division': 
-            console.log( parseFloat(v1) / parseFloat(v2));
-            break;    
-    default:
-        console.log('la operacion indicada no existe');
-        break;
-}
+  const doInput = () => {
+    const t = document.getElementById('my_input');
+    console.log(t.value)};
